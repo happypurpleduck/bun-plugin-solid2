@@ -1,0 +1,35 @@
+{
+	"name": "@purpleduck/bun-plugin-solid2",
+	"type": "module",
+	"version": "0.0.0",
+	"private": true,
+	"description": "solid-js 2.0 plugin for Bun with HMR",
+	"author": "happypurpleduck",
+	"license": "MIT",
+	"exports": {
+		".": {
+			"types": "./lib/index.d.ts",
+			"import": "./lib/index.mjs"
+		}
+	},
+	"module": "lib/index.mjs",
+	"types": "lib/index.d.ts",
+	"files": [
+		"lib"
+	],
+	"dependencies": {
+		"@babel/core": "^7.23.3",
+		"@babel/preset-typescript": "^7.23.3",
+		"babel-preset-solid": "^2.0.0-beta.1",
+		"merge-anything": "^6.0.6",
+		"picomatch": "^4.0.0"
+	},
+	"devDependencies": {
+		"@antfu/eslint-config": "^7.7.0",
+		"@types/babel__core": "^7.20.5",
+		"@types/bun": "latest",
+		"@types/picomatch": "^4.0.2",
+		"eslint": "^10.0.2",
+		"typescript": "^6.0.1-rc"
+	}
+}

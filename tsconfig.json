@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"lib": ["ESNext"],
+		"rootDir": "./lib",
+		"module": "NodeNext",
+		"moduleResolution": "nodenext",
+		"allowImportingTsExtensions": true,
+		"allowJs": true,
+		"checkJs": true,
+		"strict": true,
+		"noEmit": true,
+		"forceConsistentCasingInFileNames": true,
+		"skipLibCheck": true
+	},
+	"include": ["lib"]
+}

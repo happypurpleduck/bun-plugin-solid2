@@ -1,0 +1,169 @@
+{
+	"prettier": {
+		"allowed": false
+	},
+	"languages": {
+		"JavaScript": {
+			"language_servers": [
+				"...",
+				"!vtsls",
+				"tsgo",
+				"!typescript-language-server",
+				"!biome"
+			],
+			"formatter": [
+				{
+					"code_action": "source.fixAll.eslint"
+				}
+			]
+		},
+		"TypeScript": {
+			"language_servers": [
+				"...",
+				"!vtsls",
+				"tsgo",
+				"!typescript-language-server",
+				"!biome"
+			],
+			"formatter": [
+				// {
+				// 	"external": {
+				// 		"command": "graphql-formatter.exe"
+				// 	}
+				// },
+				{
+					"code_action": "source.fixAll.eslint"
+				}
+			]
+		},
+		"JSON": {
+			"language_servers": ["...", "eslint"],
+			"formatter": [
+				{
+					"code_action": "source.fixAll.eslint"
+				}
+			]
+		},
+		"JSONC": {
+			"language_servers": ["...", "eslint"],
+			"formatter": [
+				{
+					"code_action": "source.fixAll.eslint"
+				}
+			]
+		},
+		"TSX": {
+			"language_servers": [
+				"...",
+				"!vtsls",
+				"tsgo",
+				"!typescript-language-server",
+				"!biome"
+			],
+			"formatter": [
+				{
+					"code_action": "source.fixAll.eslint"
+				}
+			]
+		},
+		"Svelte": {
+			"formatter": [
+				{
+					"code_action": "source.fixAll.eslint"
+				}
+			]
+		},
+		"CSS": {
+			"formatter": [
+				{
+					"code_action": "source.fixAll.eslint"
+				}
+			],
+			"language_servers": ["...", "eslint"]
+		}
+	},
+	"lsp": {
+		"!vtsls": {
+			"settings": {
+				"typescript": {
+					"preferences": {
+						"importModuleSpecifier": "non-relative",
+						"importModuleSpecifierEnding": "js",
+						"includePackageJsonAutoImports": "on"
+					}
+				}
+			}
+		},
+		"tsgo": {
+			"settings": {
+				"typescript": {
+					"preferences": {
+						"importModuleSpecifier": "non-relative",
+						"importModuleSpecifierEnding": "js",
+						"includePackageJsonAutoImports": "on"
+					}
+				}
+			}
+		},
+		"eslint": {
+			"settings": {
+				// TEMP: until zed fixes LSP
+				"experimental": {
+					"useFlatConfig": false
+				},
+				"rulesCustomizations": [
+					{
+						"rule": "style/*",
+						"severity": "off",
+						"fixable": true
+					},
+					{
+						"rule": "format/*",
+						"severity": "off",
+						"fixable": true
+					},
+					{
+						"rule": "*-indent",
+						"severity": "off",
+						"fixable": true
+					},
+					{
+						"rule": "*-spacing",
+						"severity": "off",
+						"fixable": true
+					},
+					{
+						"rule": "*-spaces",
+						"severity": "off",
+						"fixable": true
+					},
+					{
+						"rule": "*-order",
+						"severity": "off",
+						"fixable": true
+					},
+					{
+						"rule": "*-dangle",
+						"severity": "off",
+						"fixable": true
+					},
+					{
+						"rule": "*-newline",
+						"severity": "off",
+						"fixable": true
+					},
+					{
+						"rule": "*quotes",
+						"severity": "off",
+						"fixable": true
+					},
+					{
+						"rule": "*semi",
+						"severity": "off",
+						"fixable": true
+					}
+				]
+			}
+		}
+	}
+}
