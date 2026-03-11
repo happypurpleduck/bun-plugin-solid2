@@ -9,8 +9,12 @@ export default antfu({
 		semi: true,
 	},
 
+	ignores: [
+		".sisyphus",
+	],
+
 	typescript: {
-		filesTypeAware: ["**/*.{mjs,ts,tsx}"],
+		filesTypeAware: ["{lib,example}/**/*.{mjs,ts,tsx}"],
 		tsconfigPath: "./tsconfig.json",
 		overridesTypeAware: {
 			"ts/naming-convention": [

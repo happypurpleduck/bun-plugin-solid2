@@ -2,10 +2,11 @@
 	"name": "@purpleduck/bun-plugin-solid2",
 	"type": "module",
 	"version": "0.0.0",
-	"private": true,
+	"workspaces": ["test", "test/fixtures/*"],
 	"description": "solid-js 2.0 plugin for Bun with HMR",
 	"author": "happypurpleduck",
 	"license": "MIT",
+	"sideEffects": false,
 	"exports": {
 		".": {
 			"types": "./lib/index.d.ts",
@@ -17,16 +18,29 @@
 	"files": [
 		"lib"
 	],
+	"scripts": {
+		"check": "tsc --noEmit",
+		"lint": "eslint",
+		"test": "cd test && bunx playwright test",
+		"test:ui": "cd test && bunx playwright test --ui"
+	},
+	"peerDependencies": {
+		"solid-js": ">=2.0.0-beta.1"
+	},
 	"dependencies": {
 		"@babel/core": "^7.23.3",
+		"@babel/generator": "^7.29.1",
 		"@babel/preset-typescript": "^7.23.3",
+		"@babel/types": "^7.29.0",
 		"babel-preset-solid": "^2.0.0-beta.1",
 		"merge-anything": "^6.0.6",
-		"picomatch": "^4.0.0"
+		"picomatch": "^4.0.0",
+		"solid-js": ">=2.0.0-beta.1"
 	},
 	"devDependencies": {
 		"@antfu/eslint-config": "^7.7.0",
 		"@types/babel__core": "^7.20.5",
+		"@types/babel__generator": "^7.27.0",
 		"@types/bun": "latest",
 		"@types/picomatch": "^4.0.2",
 		"eslint": "^10.0.2",

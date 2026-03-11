@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+		"composite": true,
+		"lib": ["ESNext", "DOM"],
+		"rootDir": ".",
+		"module": "NodeNext",
+		"moduleResolution": "nodenext",
+		"types": ["@playwright/test", "node"],
+		"rewriteRelativeImportExtensions": true,
+		"allowImportingTsExtensions": true
+	},
+	"include": [
+		"**/*.ts",
+		"**/*.tsx"
+	],
+	"exclude": [
+		"node_modules",
+		"test-results",
+		"fixtures"
+	]
+}

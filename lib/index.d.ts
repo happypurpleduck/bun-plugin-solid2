@@ -1,4 +1,3 @@
-import type * as babel from "@babel/core";
 import type { BunPlugin } from "bun";
 
 export interface ExtensionOptions {
