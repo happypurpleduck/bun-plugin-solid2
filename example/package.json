@@ -3,13 +3,13 @@
 	"type": "module",
 	"version": "0.0.0",
 	"scripts": {
-		"dev": "bun run index.html",
+		"dev": "bun run --hot serve.ts",
 		"test": "playwright test"
 	},
 	"dependencies": {
 		"@purpleduck/bun-plugin-solid2": "..",
-		"@solidjs/web": "2.0.0-beta.1",
-		"solid-js": "2.0.0-beta.1"
+		"@solidjs/web": "2.0.0-beta.4",
+		"solid-js": "2.0.0-beta.4"
 	},
 	"devDependencies": {
 		"@types/bun": "latest",
