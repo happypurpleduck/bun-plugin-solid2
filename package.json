@@ -28,17 +28,17 @@
 		"test:ui": "cd test && bunx playwright test --ui"
 	},
 	"peerDependencies": {
-		"solid-js": ">=2.0.0-beta.4"
+		"solid-js": "2.0.0-beta.4"
 	},
 	"dependencies": {
 		"@babel/core": "^7.23.3",
 		"@babel/generator": "^7.29.1",
 		"@babel/preset-typescript": "^7.23.3",
 		"@babel/types": "^7.29.0",
-		"babel-preset-solid": "^2.0.0-beta.4",
+		"babel-preset-solid": "2.0.0-beta.4",
 		"merge-anything": "^6.0.6",
 		"picomatch": "^4.0.0",
-		"solid-js": ">=2.0.0-beta.4"
+		"solid-js": "2.0.0-beta.4"
 	},
 	"devDependencies": {
 		"@antfu/eslint-config": "^7.7.0",
