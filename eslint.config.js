@@ -10,7 +10,7 @@ export default antfu({
 	},
 
 	ignores: [
-		".sisyphus",
+		"test-results",
 	],
 
 	typescript: {

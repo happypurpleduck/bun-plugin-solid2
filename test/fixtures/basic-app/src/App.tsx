@@ -8,6 +8,7 @@ export function App() {
 			<h1 data-testid="title">Hello from SolidJS!</h1>
 			<p data-testid="count-display">
 				Count:
+				{" "}
 				{count()}
 			</p>
 			<button

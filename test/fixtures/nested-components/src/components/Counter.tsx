@@ -7,6 +7,7 @@ export function Counter() {
 		<div data-testid="counter">
 			<p data-testid="count">
 				Count:
+				{" "}
 				{count()}
 			</p>
 			<button
