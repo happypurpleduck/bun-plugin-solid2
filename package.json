@@ -37,16 +37,16 @@
 		"@babel/types": "^7.29.0",
 		"babel-preset-solid": "next",
 		"merge-anything": "^6.0.6",
-		"picomatch": "^4.0.0",
+		"picomatch": "^4.0.4",
 		"solid-js": "next"
 	},
 	"devDependencies": {
-		"@antfu/eslint-config": "^7.7.0",
+		"@antfu/eslint-config": "^8.1.0",
 		"@types/babel__core": "^7.20.5",
 		"@types/babel__generator": "^7.27.0",
-		"@types/bun": "latest",
-		"@types/picomatch": "^4.0.2",
-		"eslint": "^10.0.2",
-		"typescript": "^6.0.1-rc"
+		"@types/bun": "1.3.11",
+		"@types/picomatch": "^4.0.3",
+		"eslint": "^10.2.0",
+		"typescript": "^6.0.2"
 	}
 }
