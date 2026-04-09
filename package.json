@@ -7,6 +7,18 @@
 		"test/fixtures/*"
 	],
 	"description": "solid-js 2.0 plugin for Bun with HMR",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/happypurpleduck/bun-plugin-solid2.git"
+	},
+	"keywords": [
+		"solid",
+		"solid-js",
+		"bun",
+		"bun-plugin",
+		"hmr",
+		"hot-module-replacement"
+	],
 	"author": "happypurpleduck",
 	"license": "MIT",
 	"sideEffects": false,
